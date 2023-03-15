@@ -1,0 +1,90 @@
+button {
+    color: black;
+    width: 19.7%;
+    height: 50px;
+}
+
+* {
+    font-family: monospace;
+}
+.topbar {
+    background-color: white;
+    height: 50px;
+    font-size: 0px;
+}
+
+.abstractDescription .abstractDescriptionHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.GUIDescription .GUIDescriptionHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contacts .contactsHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.howTo .howToHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 64px;
+    text-align: center;
+    background-color: white;
+}
+
+
+p {
+    font-size: 24px;
+    background-color: white;
+}
+
+.graphs {
+    font-size: 18px;
+    width: 15%;
+    background-color: white;
+}
+
+.data {
+    font-size: 18px;
+    position: absolute;
+    right: 0.5%;
+    background-color: white;
+    width: 15%;
+}
+
+.bars {
+    background-color: #5e746b;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #748B90;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 475px;
+}
+
+.databutton {
+  text-align: align-right;
+  width: 200px;
+  background-color: #5e746b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Change color of graph button on hover */
+.graphlink :hover {color: black;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #748B90;}

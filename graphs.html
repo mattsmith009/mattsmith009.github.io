@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <script src="graph.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="graphs.css">
+    <title> Rate Cost GUI Interactive Graphs </title>
+</head>
+
+<body>
+   <div id="Sidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="machineButton"> Machine </a>
+        <div class="machineDropDowns">
+          <div>
+            <input type="checkbox" id="m100" name="source" value="m100">
+            <label for="m100"> m100 </label>
+          </div>
+          <div>
+            <input type="checkbox" id="m200" name="source" value="m100">
+            <label for="m200"> m200 </label>
+          </div>
+          <div>
+            <input type="checkbox" id="m400" name="source" value="m100">
+            <label for="m400"> m400 </label>
+          </div>       
+          <div>
+            <input type="checkbox" id="m400-4" name="source" value="m100">
+            <label for="m400-4"> m400-4 </label>
+          </div>
+        </div>
+
+        <a class="materialButton"> Material  </a>
+        <div class="materialDropDowns">
+          <div>
+            <input type="checkbox" id="AlSi10Mg" name="source" value="AlSi10Mg">
+            <label for="AlSi10Mg"> AlSi10Mg </label>
+          </div>
+          <div>
+            <input type="checkbox" id="1.2709 Steel" name="source" value="1.2709 Steel">
+            <label for="1.2709 Steel"> 1.2709 Steel </label>
+          </div> 
+          <div>
+            <input type="checkbox" id="Ti6Al4V" name="source" value="Ti6Al4V">
+            <label for="Ti6Al4V"> Ti6Al4V </label>
+          </div> 
+        </div>
+
+        <div class="submitButton">
+          <a class="submit"> Submit </a>
+        </div>
+
+      </div>
+
+      <div class="customizeGraph">
+        <span onclick="openNav()"><span class="dot" data-inline="true"> Customize Graph </span></span>
+        <span onclick="history.back()" class="homeButton" data-inline="true"> Home </span>
+      </div>
+
+      <div>
+        <canvas id="newGraph"></canvas>
+      </div>
+  </body>
+</html>
+
+<!-- Problem with files not being accesible may also be the same reason why we cannot access files properly in JavaScript using node.js-->

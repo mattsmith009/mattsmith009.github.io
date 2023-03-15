@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<title> Rate Cost GUI </title>
+
+<div class="topbar"> 
+    <div class="graphlink">
+        <a href="/Users/mattsmith/Desktop/Rate Cost Urop/GUI/ratecostgui/graphs.html" data-inline="true"> <button class="dropbtn" id="costProduction"> Cost vs. Production Quantity Maps </button> </a>
+        <a href="" data-inline="true"><button class = "dropbtn"> Build Rate Maps </button></a>
+        <a href="data.html" data-inline="true"><button class = "dropbtn"> Data </button></a>
+    </div>
+</div>
+
+<body>
+
+    <header class="title"> Exploring Rate-Cost-Quality Tradeoffs for Metal Additive Manufacturing </header>
+
+    <div class="GUIDescription">
+        <header class="GUIDescriptionHeader"> About the GUI </header>
+        <p> 
+            This GUI displays the various relationships between different combinations of machine-material pairings observed in
+            Laser Bowder Bed Fusion. The GUI allows the user to choose between 3 material sepcifications and 4 machine specifications
+            in order to view the varying relationships between all pairs. Users may even view multiple different curves representing different 
+            material-machine pairs at once, allowing for their further understanding of the relationships between material, machines, cost, and the 
+            number of builds as it relates to LPBF.
+        </p>
+    </div>
+
+    <div class="abstractDescription">
+        <header class="abstractDescriptionHeader"> Background </header>
+        <p>
+            This tool is built off a framework to estimate throughput and cost of additive manufacturing (AM) as related to process parameters,
+            material thermodynamic properties and machine specifications. Taking a 3D model of the part design as input, the model uses a parametrization
+            of the rate-limiting physics of the AM build process – herein focusing on laser powder bed fusion (LPBF) and scaling of LPBF melt pool geometry – to
+            estimate part- and material-specific build time. From this estimate, per-part cost is calculated using a quantity-dependent activity-based production model.
+            The data is derived from the work of Gee et al 2022: 
+            <a href="https://doi.org/10.1108/RPJ-02-2022-0065 "> https://doi.org/10.1108/RPJ-02-2022-0065 </a>
+        </p>
+    </div>
+
+    <div class="contacts">
+        <header class="contactsHeader"> Contacts </header>
+        <p>
+            Please contact kgee@mit.edu (Kaitlyn Elizabeth Gee) for any questions about the model, and msmith26@mit.edu (Matt Smith)
+            for any questions about the GUI.
+        </p>
+    </div>
+
+    <div class="howTo">
+        <header class="howToHeader"> How to Use This Tool </header>
+        <p>
+            This tool was created with the goal of being easy to use by all users of varying experience. To that end, we the creators have ensured that navigation is as
+            possible. Right now, you are on the landing page, on which you can find information about the background of the GUI, who the creators of the GUI are,
+            and what research the GUI displays. Located in the top right are buttons labeled Cost vs. Production Quantity Maps, Build Rate Maps, and Data. 
+        </p>
+        <p>
+            Clicking on the Cost vs. Production Quantity Maps button leads you to a page where you can analyze the relationships between the cost per CC of various
+            different materials, and how it affects the number of builds produced with specific machine specifications. Clicking on the Build Rate Maps leads you to a 
+            page with build rate maps...Clicking on the Data button leads you to a page where you can download all of the raw data available that has been collected throughout this
+            research.
+        </p>
+    </div>
+</body>
+</html>
