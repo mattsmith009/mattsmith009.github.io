@@ -1,5 +1,5 @@
-const csv = require('csv-parser')
-const fs = require('fs')
+const csv = require('csv-parser');
+const fs =  require('fs');
 const results = [];
 const costPerCC = []
 const N = []
@@ -20,8 +20,9 @@ fs.createReadStream('raw_data/cost_data_12709_m100.csv')
     return parseFloat(str); });
 
   console.log(nFloat, CPCCFloat)
-  })
 
+  });
+  
 // Open the navigation 
 function openNav() {
     document.getElementById("Sidenav").style.width = "250px";
