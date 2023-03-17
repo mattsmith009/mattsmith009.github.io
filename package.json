@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chart.js": "^4.2.1",
     "csv-parser": "^3.0.0"
   },
-  "type":"module"
+  "devDependencies": {
+    "@types/chart.js": "^2.9.37"
+  }
 }
-
-
