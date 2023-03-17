@@ -19,36 +19,8 @@ fs.createReadStream('raw_data/cost_data_12709_m100.csv')
   var CPCCFloat = costPerCC.map(function(str) {
     return parseFloat(str); });
 
-  console.log(nFLoat)
-  
-  // Creating chart
-  
-    const ctx = document.getElementById('newGraph'); // Throws error, running in  a non-browser environment.
-
-    // Since I can't make the charts themselves yet, I cant just create the box for the graphs to be used in, and then
-    // Fill them in later.
-
-    //Create dropbox with the raw data, and try having the user download from there. 
-
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: nFloat,
-        datasets: [{
-          label: 'Enter string here',
-          data: CPCCFloat,
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-});
+  console.log(nFloat, CPCCFloat)
+  })
 
 // Open the navigation 
 function openNav() {
@@ -59,4 +31,5 @@ function openNav() {
 // Close the navigation 
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
-}
+  }
+
