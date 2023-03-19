@@ -1,24 +1,10 @@
-/*
-var ctx = document.getElementsById("newGraph");
-var chart = new Chart(ctx, {
-  type: 'horizontalBar',
-  data: {
-    labels: ['A', 'B', 'C'],
-    datasets: [
-      {
-        data: [10, 20, 30]
-      }
-    ]
-  }
-});
-*/
-
 const csv = require('csv-parser');
-const fs =require('fs');
+const fs = require('fs');
 const results = [];
 const costPerCC = []
 const N = []
 
+// Use an array and for loop to get csv file data from all 12 files.
 fs.createReadStream('raw_data/cost_data_12709_m100.csv')
   .pipe(csv())
   .on('data', (data) => results.push(data))
