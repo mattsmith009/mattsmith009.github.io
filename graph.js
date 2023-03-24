@@ -1,3 +1,4 @@
+/*
 const csv = require('csv-parser');
 const fs = require('fs');
 const results = [];
@@ -21,43 +22,9 @@ fs.createReadStream('raw_data/cost_data_12709_m100.csv')
     return parseFloat(str); });
 
   console.log(nFloat, CPCCFloat)
-  });
-
-  fs.createReadStream('raw_data/cost_data_12709_m290.csv')
-  .pipe(csv())
-  .on('data', (data) => results.push(data))
-  .on('end', () => {
-  for(let i = 0; i < results.length; i++) {
-      costPerCC.push(results[i].costPerCC);
-      N.push(results[i].N);
-  };
-
-  var nFloat = N.map(function(str) {
-    return parseFloat(str); });
-
-  var CPCCFloat = costPerCC.map(function(str) {
-    return parseFloat(str); });
-
-  console.log(nFloat, CPCCFloat)
-  });
-
-  fs.createReadStream('raw_data/cost_data_12709_m400-4.csv')
-  .pipe(csv())
-  .on('data', (data) => results.push(data))
-  .on('end', () => {
-  for(let i = 0; i < results.length; i++) {
-      costPerCC.push(results[i].costPerCC);
-      N.push(results[i].N);
-  };
-
-  var nFloat = N.map(function(str) {
-    return parseFloat(str); });
-
-  var CPCCFloat = costPerCC.map(function(str) {
-    return parseFloat(str); });
-
-  console.log(nFloat, CPCCFloat)
-  });
+    }
+  )
+  */
 
 // Open the navigation 
 function openNav() {
@@ -69,4 +36,27 @@ function openNav() {
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
   }
+
+  // Slide functions
+  /*
+  Window.onload = slideFunction();
+  function slideFunction() {
+    console.log("This will be the slide functionality")
+  }
+  */
+
+// Creating charts
+
+d3.csv("cost_data_12709_m100.csv").then(makeChart);
+
+function makeChart(costCurve) {
+  var costPerCC = costCurve.map(function (d) {
+    return d.costPerCC;
+  });
+  var N = costCurve.map(function (d) {
+    return d.N;
+  });
+
+  console.log(N)
+}
 
