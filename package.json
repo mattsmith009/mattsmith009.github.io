@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "graph.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,12 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "chart.js": "^4.2.1",
-    "csv-parser": "^3.0.0"
+    "csv": "^6.2.8",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "require": "^2.4.20",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@types/chart.js": "^2.9.37"
   }
-  
 }
-
-

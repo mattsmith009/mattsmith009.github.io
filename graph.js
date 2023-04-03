@@ -1,6 +1,5 @@
-/*
-const csv = require('csv-parser');
-const fs = require('fs');
+import fs from'fs';
+import csv from 'csv-parser';
 const results = [];
 const costPerCC = []
 const N = []
@@ -24,7 +23,8 @@ fs.createReadStream('raw_data/cost_data_12709_m100.csv')
   console.log(nFloat, CPCCFloat)
     }
   )
-  */
+
+//import d3 from "d3-selection";
 
 // Open the navigation 
 function openNav() {
@@ -46,7 +46,7 @@ function closeNav() {
   */
 
 // Creating charts
-
+/*
 d3.csv("cost_data_12709_m100.csv").then(makeChart);
 
 function makeChart(costCurve) {
@@ -59,4 +59,5 @@ function makeChart(costCurve) {
 
   console.log(N)
 }
+*/
 
