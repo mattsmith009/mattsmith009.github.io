@@ -45,18 +45,14 @@ font-size: 36px;
 margin-left: 50px;
 }
 
-.sidenav .machineDropDowns label {
+.sidenav #machineDropDowns label {
 font-size: 18px;
 color: #818181;
 }
 
-.sidenav .materialDropDowns label {
+.sidenav #materialDropDowns label {
 font-size: 18px;
 color: #818181;
-}
-
-.sidenav .machineDropDowns, .materialDropDowns {
-display: none;
 }
 
 .customizeGraph {
@@ -75,6 +71,13 @@ display: none;
   float: left;
 }
 
+.chartBox {
+  width: 100%;
+}
+
+#myChart {
+  transition: 0.5s;
+}
 .sidenav .submitButton a{
   font-size: 14px;
 }

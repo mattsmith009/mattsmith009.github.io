@@ -1,5 +1,6 @@
-import fs from'fs';
-import csv from 'csv-parser';
+/*
+const csv = require('csv-parser');
+const fs = require('fs');
 const results = [];
 const costPerCC = []
 const N = []
@@ -23,41 +24,26 @@ fs.createReadStream('raw_data/cost_data_12709_m100.csv')
   console.log(nFloat, CPCCFloat)
     }
   )
-
+*/
 //import d3 from "d3-selection";
 
 // Open the navigation 
 function openNav() {
     document.getElementById("Sidenav").style.width = "250px";
+    document.getElementById("myChart").style.width = "80%";
+    document.getElementById("myChart").style.float = "right";
   }
 
   
 // Close the navigation 
 function closeNav() {
   document.getElementById("Sidenav").style.width = "0";
+  document.getElementById("myChart").style.width = "100%";
   }
 
-  // Slide functions
-  /*
-  Window.onload = slideFunction();
-  function slideFunction() {
-    console.log("This will be the slide functionality")
-  }
-  */
-
-// Creating charts
-/*
-d3.csv("cost_data_12709_m100.csv").then(makeChart);
-
-function makeChart(costCurve) {
-  var costPerCC = costCurve.map(function (d) {
-    return d.costPerCC;
-  });
-  var N = costCurve.map(function (d) {
-    return d.N;
-  });
-
-  console.log(N)
+function openMachineDropdown() {
+  
 }
-*/
+
+
 
