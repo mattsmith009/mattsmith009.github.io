@@ -41,9 +41,7 @@ function closeNav() {
   document.getElementById("myChart").style.width = "100%";
   }
 
-function openMachineDropdown() {
-  
-}
+
 
 
 
