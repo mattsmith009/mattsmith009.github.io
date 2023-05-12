@@ -34,7 +34,7 @@ button {
 }
 
 .title {
-    font-size: 64px;
+    font-size: 50px;
     text-align: center;
     background-color: white;
 }
@@ -81,6 +81,18 @@ p {
   padding: 16px;
   font-size: 16px;
   border: none;
+}
+
+.subheading1 {
+    text-align: center;
+}
+
+.subheading2 {
+    text-align: center;
+}
+
+header {
+    font-size: 16px;
 }
 
 /* Change color of graph button on hover */

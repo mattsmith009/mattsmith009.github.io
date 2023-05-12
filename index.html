@@ -18,30 +18,48 @@
 
 <body>
 
-    <header class="title"> Exploring Rate-Cost-Quality Tradeoffs for Metal Additive Manufacturing </header>
+    <header class="title"> 
+        Visualizing Rate-Cost-Quality Tradeoffs of Additive Manufacturing of Metal with Application to Laser Powder Bed Fusion        
+    </header>
 
-    <div class="GUIDescription">
-        <header class="GUIDescriptionHeader"> About the GUI </header>
-        <p> 
-            This GUI displays the various relationships between different combinations of machine-material pairings observed in
-            Laser Bowder Bed Fusion. The GUI allows the user to choose between 3 material sepcifications and 4 machine specifications
-            in order to view the varying relationships between all pairs. Users may even view multiple different curves representing different 
-            material-machine pairs at once, allowing for their further understanding of the relationships between material, machines, cost, and the 
-            number of builds as it relates to LPBF.
-        </p>
-    </div>
+    <header class="subheading1">A data visualization tool which displays parameter tradeoffs  of laser powder bed fusion, a novel, yet under characterized manufacturing technology </header> <br>
+
+    <header class="subheading2">Matt Smith<sup>1</sup>, Kaitlyn Gee<sup>2</sup>, Haden Quinlan<sup>2</sup>, Suh In Kim<sup>2</sup>, and A. John Hart<sup>2</sup> <br><br>
+        <sup>1</sup>Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology <br>
+        <sup>2</sup>Department of Mechanical Engineering, Massachusetts Institute of Technology
+    </header>
 
     <div class="abstractDescription">
-        <header class="abstractDescriptionHeader"> Background </header>
-        <p>
-            This tool is built off a framework to estimate throughput and cost of additive manufacturing (AM) as related to process parameters,
-            material thermodynamic properties and machine specifications. Taking a 3D model of the part design as input, the model uses a parametrization
-            of the rate-limiting physics of the AM build process – herein focusing on laser powder bed fusion (LPBF) and scaling of LPBF melt pool geometry – to
-            estimate part- and material-specific build time. From this estimate, per-part cost is calculated using a quantity-dependent activity-based production model.
-            The data is derived from the work of Gee et al 2022: 
-            <a href="https://doi.org/10.1108/RPJ-02-2022-0065 "> https://doi.org/10.1108/RPJ-02-2022-0065 </a>
+            <header class="abstractDescriptionHeader"> About the GUI </header>
+            <p>
+                This graphical user interface (GUI) displays the relationships between material selection, machine selection, per-cc production cost and production 
+                quantity for laser powder bed fusion (LPBF). The GUI allows the user to choose between 3 material specifications and 4 machine specifications in order 
+                to view the varying relationships between all pairs. Users may view multiple different curves representing different material-machine pairs at once, 
+                allowing for their further understanding of the relationships between material, machines, cost, and the number of builds as it relates to LPBF.
+                <a href="https://doi.org/10.1108/RPJ-02-2022-0065 "> https://doi.org/10.1108/RPJ-02-2022-0065 </a>
+            </p>
+        </div>
+        
+    <div class="GUIDescription">
+        <header class="GUIDescriptionHeader"> Background and Importance </header>
+        <p> 
+            Additive manufacturing (AM) is the process of joining materials to make parts from 3D model data (ISO/ASTM 52900), generally by depositing material 
+            layer by layer. Laser powder bed fusion, a type of AM, can fabricate highly complex metal components and is compatible with many different types of 
+            alloys. Our prior work has found a correlation between specific process, machine, and material specifications and the efficiency of laser powder bed 
+            fusion on exemplary materials. It is important to understand these estimates of AM cost and bounds of the design space in order to discuss how these 
+            factors are interrelated and are driven by process physics, material thermodynamic properties, and machine specifications. This understanding and the 
+            development of parametrized, granularized models of rate, cost, quality and flexibility, enables industry to efficiently leverage AM for their digital 
+            manufacturing needs. <br> <br>
+
+            This tool is built off a framework to estimate throughput and cost of additive manufacturing (AM) as related to process parameters, material thermodynamic 
+            properties and machine specifications. Taking a 3D model of the part design as input, the model uses a parametrization of the rate-limiting physics of the 
+            AM build process – herein focusing on laser powder bed fusion and scaling of LPBF melt pool geometry – to estimate part- and material-specific build time. 
+            From this estimate, per-part cost is calculated using a quantity-dependent activity-based production model. The data is derived from the work of Gee et al 
+            2022: <a href="https://doi.org/10.1108/RPJ-02-2022-0065"> https://doi.org/10.1108/RPJ-02-2022-0065 </a>
         </p>
     </div>
+
+   
 
     <div class="contacts">
         <header class="contactsHeader"> Contacts </header>
